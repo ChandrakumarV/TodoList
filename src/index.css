@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s, color 0.2s;
+  color: rgb(40, 35, 63);
+}
+body {
+  width: 100%;
+  /* min-height: 100vh; */
+  background-color: rgb(39, 43, 48);
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100dvh;
+  width: 300px;
+  width: min(400px, 90vw);
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  /* background-color: rgba(233, 233, 233, 0.123); */
+}
+
+.container h1 {
+  color: white;
+}
+
+/* ------------------------------------------------------------------------- */
+.container .input-con {
+  width: 100%;
+  padding: 20px 20px;
+  border-radius: 20px;
+  background-color: rgba(119, 136, 153, 0.281);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .input-con input {
+  padding: 5px 15px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+.container .input-con button {
+  padding: 5px 20px;
+  color: white;
+  font-weight: 550;
+  background-color: rgb(152, 82, 209);
+  /* width: 70px; */
+
+  outline: none;
+  border: none;
+  /* align-self: stretch; */
+
+  border-radius: 20px;
+}
+/* ------------------------------------------------------------------------- */
+.container .item-con {
+  width: 100%;
+  flex-grow: 1;
+  max-height: 50vh;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(119, 136, 153, 0.281);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  margin-block: 25px;
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #88888870;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.item-con .item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px 5px 15px;
+  border-radius: 10px;
+  /* border-radius: 20px; */
+  background-color: rgba(238, 238, 238, 0.164);
+}
+
+.item span {
+  max-width: 180px;
+  word-wrap: break-word;
+  color: white;
+}
+.item button {
+  align-self: flex-start;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: rgb(152, 82, 209);
+  cursor: pointer;
+}
+
+.item button:active {
+  background-color: rgb(121, 27, 129);
+}
+
+
+@media (hover:hover){
+  .item button:hover {
+    background-color: rgb(73, 13, 78);
+  }
+}
+
+/* ------------------------------------------------------------------- */
+.container > p {
+  margin-top: auto;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.274);
+}
